@@ -1,0 +1,83 @@
+{
+  "name": "genshin_artifacts",
+  "version": "4.14.0",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env MONA_TITLE=GAOP MONA_NEED_BEIAN=false MONA_NEED_MIGRATE=false MONA_ROUTE_MODE=hash vue-cli-service serve",
+    "build": "cross-env MONA_TITLE=GAOP MONA_NEED_BEIAN=false MONA_NEED_MIGRATE=false MONA_ROUTE_MODE=hash vue-cli-service build",
+    "build:1": "cross-env MONA_TITLE=GAOP MONA_NEED_BEIAN=true MONA_BEIAN_NUMBER=1 MONA_NEED_MIGRATE=true MONA_ROUTE_MODE=hash vue-cli-service build",
+    "build:2": "cross-env MONA_TITLE=GAOP MONA_NEED_BEIAN=true MONA_BEIAN_NUMBER=2 MONA_NEED_MIGRATE=false MONA_ROUTE_MODE=history vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "inspect": "vue inspect > inspect.js",
+    "myserve": "serve ./dist",
+    "pack": "tar -czvf dist.tar.gz ./dist",
+    "optimize-png": "node ./script/optimize_png.js",
+    "download-artifact": "node ./script/download_artifact.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "element-theme-dark": "^1.0.3",
+    "element-ui": "^2.15.0",
+    "express-static": "^1.2.6",
+    "genshin_panel": "^2.22.0",
+    "is-electron": "^2.2.0",
+    "katex": "^0.13.0",
+    "object-hash": "^2.2.0",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
+    "express": "^4.17.2",
+    "vue-katex": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "mustache": "^4.2.0",
+    "node-html-parser": "^3.2.0",
+    "sass": "^1.32.10",
+    "sass-loader": "^10.1.1",
+    "serve-static": "^1.14.2",
+    "sharp": "^0.29.3",
+    "vue-router": "^3.4.8",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.5.1",
+    "worker-loader": "^3.0.8",
+    "worker-plugin": "^5.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+    
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

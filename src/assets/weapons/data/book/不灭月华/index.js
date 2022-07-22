@@ -1,0 +1,11 @@
+import tn from "./tn.png";
+// import { commonConfigRate } from "../../../common/utils";
+
+export default {
+    name: "bumieyuehua",
+    chs: "Everlasting Moonglow",
+    url: tn,
+    star: 5,
+    type: "book",
+    effect: "Byakuya Kougetsu: Healing Bonus increased by 10/12.5/15/17.5/20%, Normal Attack DMG is increased by 1/1.5/2/2.5/3% of Max HP of the character equipping this weapon. For 12s after using an Elemental Burst, Normal Attacks that hit opponents will restore 0.6 Energy. Energy can be restored this way once every 0.1s."
+}

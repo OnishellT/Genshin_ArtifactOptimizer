@@ -1,0 +1,119 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: #222933;
+}
+
+* {
+    font-family: 'Fira Code', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    /* el-drawer will have black outline when focused, use this to eliminate */
+    outline: none;
+    src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap);
+    
+    
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pos-relative {
+    position: relative;
+}   
+
+.pos-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.fs-12 {
+    font-size: 1rem;
+}
+
+.fs-14 {
+    font-size: 1.6rem;
+}
+
+.color-normal {
+    color: #606266;
+}
+
+.br-3 {
+    border-radius: 3px;
+}
+
+.br-50p {
+    border-radius: 50%;
+}
+
+.no-deco {
+    text-decoration: none;
+}
+
+.el-drawer__header{
+    overflow: auto;
+    background: #222933; 
+    color: white; 
+}
+
+.el-drawer__body {
+    overflow: auto;
+    background: #222933;
+
+
+    /* overflow-x: auto; */
+}
+.el-table tr:nth-child(odd) {
+    background-color: #222933;
+  
+
+}
+
+.el-drawer__container ::-webkit-scrollbar{
+    display: none;
+    
+}
+
+
+.single-item {
+    
+    font-size: 1.6rem;
+    color: #50e7e7;
+    /* background: #eee; */
+    padding: 8px 0;
+    padding-left: 10px;
+    border-radius: 3px;
+    border-bottom: 1px solid #EBEEF5;
+    margin: 0;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.title3 {
+    font-size: 1.6rem;
+    color: #555555;
+    /* color: white; */
+    /* box-shadow: 0 0 10px 1px #00000022; */
+    /* padding: 8px; */
+    padding: 8px 0;
+    /* border-radius: 3px; */
+    /* background: #564884; */
+    /* border-left: 3px solid #564884; */
+    /* border-: 3px solid #564884; */
+}
